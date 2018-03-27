@@ -1,9 +1,7 @@
 .DS_Store
-application.yml
 app/models/user.rb
-git ignore
 db/migrate/20180325044930_create_users.rb
 db/migrate/20180325213901_create_friends.rb
-db/twitter1.db
 app/models/user.rb
 app/models/friends.rb
+*.yml
