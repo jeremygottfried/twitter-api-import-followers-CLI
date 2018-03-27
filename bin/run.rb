@@ -1,3 +1,5 @@
+require 'bundler/setup'
+Bundler.setup(:default, :ci)
 require 'activerecord-suppress_range_error'
 require 'yaml'
 keys = {}
