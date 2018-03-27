@@ -4,6 +4,4 @@ db/migrate/20180325044930_create_users.rb
 db/migrate/20180325213901_create_friends.rb
 app/models/user.rb
 app/models/friends.rb
-db/*.db
 *.yml
-*.db
