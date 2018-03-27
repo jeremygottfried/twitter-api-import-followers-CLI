@@ -21,9 +21,11 @@ File.open('application1.yml', 'w') do |f| f.write keys.to_yaml end
 puts "would you like to begin storing your friends data? This may take a while...(y/n)"
 require_relative '../config/environment'
 answer = gets.chomp
-if answer == "y"
+if answer.downcase == "y" || answer.downcase == "yes"
 Follower.store_followers_in_sql
-elsif answer == "n"
+elsif answer.downcase == "n" || answer.downcase == "no"
 puts "ok, have a nice day"
+else
+puts "Sorry, invalid response. Please reload program and try again"  
 end
 File.delete('application1.yml')
