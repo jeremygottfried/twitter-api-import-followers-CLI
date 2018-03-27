@@ -4,6 +4,7 @@ require 'activerecord-suppress_range_error'
 require 'yaml'
 keys = {}
 puts "Welcome to the twitter follower CLI"
+puts "do you already have a database?"
 puts "please enter your ACCESS TOKEN:"
 keys['ACCESS_TOKEN'] = gets.chomp
 puts "thank you"
