@@ -58,7 +58,7 @@ class Follower < ActiveRecord::Base
       end
     end
     #return the hash
-    count_hash
+    count_hash.sort_by{|key, value| -value}
   end
 
 def self.count_words_in_status
@@ -75,7 +75,7 @@ def self.count_words_in_status
     end
   end
   #return the hash
-  count_hash
+  count_hash.sort_by{|key, value| -value}
 end
 
 def self.count_location_of_friends
